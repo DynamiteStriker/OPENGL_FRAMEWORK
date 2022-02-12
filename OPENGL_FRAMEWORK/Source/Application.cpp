@@ -7,7 +7,7 @@ Application::Application() :
 	window_width(800),
 	window_height(600),
 	window(nullptr),
-	shaderProgramID(0)
+	shaderProgram(nullptr)
 {
 	//print out in the console
 	auto Handle = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -116,8 +116,8 @@ bool Application::Start()
 	Controls::SetWindow(window);
 
 	//init Shaders
-	shaderProgramID = LoadShaders("Shader//test.vertexshader", "Shader//test.fragmentshader"); // load shader
-	glUseProgram(shaderProgramID);
+	shaderProgram = new CShader("Shader//test.vertexshader", "Shader//test.fragmentshader");
+	shaderProgram->Bind();
 
 
 	//INIT OBJECTS HERE
@@ -179,7 +179,8 @@ bool Application::Exit()
 	delete testScene;
 
 	//delete Shader Programme
-	glDeleteProgram(shaderProgramID);
+	shaderProgram->UnBind();
+	delete shaderProgram;
 	//Close OpenGL window and terminate GLFW
 	glfwDestroyWindow(window);
 	//Finalize and clean up GLFW

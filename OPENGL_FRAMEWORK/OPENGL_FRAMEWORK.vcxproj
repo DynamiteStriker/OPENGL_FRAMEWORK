@@ -19,26 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CShader.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\CBaseObject.cpp" />
     <ClCompile Include="Source\Controls.cpp" />
     <ClCompile Include="Source\CSceneBase.cpp" />
+    <ClCompile Include="Source\CShader.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Mesh.cpp" />
     <ClCompile Include="Source\MeshBuilder.cpp" />
-    <ClCompile Include="Source\Shader.cpp" />
     <ClCompile Include="Source\timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CShader.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\CBaseObject.h" />
     <ClInclude Include="Source\Controls.h" />
     <ClInclude Include="Source\CSceneBase.h" />
+    <ClInclude Include="Source\CShader.h" />
     <ClInclude Include="Source\Mesh.h" />
     <ClInclude Include="Source\MeshBuilder.h" />
-    <ClInclude Include="Source\Shader.h" />
     <ClInclude Include="Source\timer.h" />
     <ClInclude Include="Source\Vertex.h" />
   </ItemGroup>

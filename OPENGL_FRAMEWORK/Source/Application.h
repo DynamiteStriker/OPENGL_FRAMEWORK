@@ -2,7 +2,7 @@
 #define Application_H
 
 
-#include "Shader.h"
+#include "CShader.h"
 
 #include "CSceneBase.h"
 #include "Controls.h"
@@ -43,10 +43,11 @@ protected:
 	unsigned int window_height;
 
 	//shader
-	unsigned int shaderProgramID;
+	CShader* shaderProgram;
 
 	//OBEJCTS
 	CSceneBase* testScene;
+
 };
 
 

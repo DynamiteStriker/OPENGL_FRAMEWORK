@@ -19,7 +19,7 @@ CSceneBase::~CSceneBase()
 
 void CSceneBase::Init()
 {
-	meshList[GEO_QUAD] = MeshBuilder::GenerateQuad("QUAD", Color(1.f, 1.f, 0.f, 1), 1.f);
+	meshList[GEO_QUAD] = MeshBuilder::GenerateQuad("QUAD", Color(1.f, 0.f, 0.f, 1), 1.f);
 	testObj = CreateObject("testQuad", GEO_QUAD);
 
 	CBaseObject::Init();
