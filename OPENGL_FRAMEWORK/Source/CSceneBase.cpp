@@ -12,7 +12,7 @@ CSceneBase::CSceneBase(std::string name): CBaseObject(name)
 CSceneBase::~CSceneBase()
 {
 	for (CBaseObject* obj : childObj)
-	{
+	{//delete all objects in the scene
 		delete obj;
 	}
 }

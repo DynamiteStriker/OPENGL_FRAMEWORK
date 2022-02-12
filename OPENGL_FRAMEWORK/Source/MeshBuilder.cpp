@@ -48,24 +48,19 @@ Mesh* MeshBuilder::GenerateQuad(const std::string& meshName, Color color, float 
 	glEnableVertexAttribArray(0); // position
 	glEnableVertexAttribArray(1); // color
 	glEnableVertexAttribArray(2); // normals
-	if (mesh->textureID > 0)
-	{
-		glEnableVertexAttribArray(3);
-	}
+	glEnableVertexAttribArray(3); // texCoords
 
 	//set buffer structure id,amt of points,type,normalize,vertex size,stride
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0); // position
 	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)sizeof(Position)); //color 
 	glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(sizeof(Position) + sizeof(Color))); //normals
+	glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(sizeof(Position) + sizeof(Color) + sizeof(TexCoord))); //texCoords
 
 	glDisableVertexAttribArray(0);
 	glDisableVertexAttribArray(1);
 	glDisableVertexAttribArray(2);
+	glDisableVertexAttribArray(3);
 
-	if (mesh->textureID > 0)
-	{
-		glDisableVertexAttribArray(3);
-	}
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mesh->indexBuffer);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index_buffer_data.size() * sizeof(GLuint), &index_buffer_data[0], GL_STATIC_DRAW);

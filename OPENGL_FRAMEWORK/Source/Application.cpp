@@ -144,7 +144,7 @@ bool Application::Run()
 	//Main Loop
 	while (!glfwWindowShouldClose(window) && !Controls::IsKeyPressed(VK_ESCAPE))
 	{
-		deltaTime = timer.getElapsedTime();
+		deltaTime = (float)timer.getElapsedTime();
 		//Update here
 		 testScene->Update(deltaTime);
 

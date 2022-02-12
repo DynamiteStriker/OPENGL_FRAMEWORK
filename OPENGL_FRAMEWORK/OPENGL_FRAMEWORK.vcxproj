@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CShader.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\CBaseObject.cpp" />
     <ClCompile Include="Source\Controls.cpp" />
@@ -30,6 +31,7 @@
     <ClCompile Include="Source\timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CShader.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\CBaseObject.h" />
     <ClInclude Include="Source\Controls.h" />

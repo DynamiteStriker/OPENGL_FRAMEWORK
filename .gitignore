@@ -6,3 +6,16 @@
 *.sarif
 *.recipe
 x64/
+OPENGL_FRAMEWORK/Debug/Application.obj
+OPENGL_FRAMEWORK/Debug/CBaseObject.obj
+OPENGL_FRAMEWORK/Debug/Controls.obj
+OPENGL_FRAMEWORK/Debug/CSceneBase.obj
+OPENGL_FRAMEWORK/Debug/CShader.obj
+OPENGL_FRAMEWORK/Debug/main.obj
+OPENGL_FRAMEWORK/Debug/Mesh.obj
+OPENGL_FRAMEWORK/Debug/MeshBuilder.obj
+OPENGL_FRAMEWORK/Debug/Shader.obj
+OPENGL_FRAMEWORK/Debug/timer.obj
+OPENGL_FRAMEWORK/Debug/vc143.idb
+OPENGL_FRAMEWORK/Debug/OPENGL_FRAMEWORK.ilk
+Debug/OPENGL_FRAMEWORK.exe
