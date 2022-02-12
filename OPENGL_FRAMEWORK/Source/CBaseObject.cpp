@@ -26,7 +26,6 @@ CBaseObject::CBaseObject(std::string n) :
 	parentObj(nullptr),
 	objectMesh(nullptr)
 {
-
 	//print out object has been created in the console
 	auto Handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	std::cout << this;
